@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+.wrapper {
+    margin: 0px;
+    width: 100vw;
+    height: 350px;
+    background: url("http://templates.thememodern.com/engitech/images/bg-pheader.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.webheading {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    padding: 2px 131px;
+    margin-top: 90px;
+}
+
+.webheading h1 {
+    font-size: 55px;
+    word-spacing: 7px;
+    width: 100%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 1em;
+    text-align: center;
+}
+
+
+.menu{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: 1;
+}
+.menu li{
+    list-style-type: none;
+    position: absolute;
+    left: 582px;
+    transform-origin: 100px;
+    transition: 1.25s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(100px);
+    
+}
+.menu h6{
+    display: none;
+}
+.menu.active li{
+    transform: rotate(calc(360deg / 4 * var(--i))) translateY(6px) translateX(-80px);;
+}
+
+.menu.active li:nth-child(2){
+    transform: rotate(calc(360deg / 4 * var(--i))) translateY(0px) translateX(-80px);
+}
+
+
+.menu.active li:nth-child(4){
+    transform:  translateX(250px) rotateX(-360deg) ; 
+}
+
+#lastform {
+    height: 60vh;
+    width: 1000px;
+}
+
+#lastform input[type=text] {
+    width: 200px;
+    margin-right: 15px;
+}
+
+#lastform input[type=number] {
+    width: 200px;
+    margin-right: 15px;
+}
+
+.menu.active h6{
+    display: block;
+    position: relative;
+    font-size: 15px;
+   
+    right: 55px;
+}
+
+ngb-popover-0{
+    width: max-content;
+}
+ng-template{
+    width: max-content;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+    transform: translate(-156px, -134px);
+}
+
+#menu.active li a{
+    font-size: 35px;
+    
+}
+.togglemybutton{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1.25s;
+}
+.togglemybutton .add{
+    font-size: 25px;
+}
+.menu.active .togglemybutton{
+    transform: rotate(315deg);
+}

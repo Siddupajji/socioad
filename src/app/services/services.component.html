@@ -1,0 +1,100 @@
+
+<div class="wrapper">
+
+</div>
+<div class="webheading">
+    <h1>Services We Provide</h1>
+</div>
+<br>
+<br>
+
+<ng-template #ngappcontent>
+
+    <section id="lastform">
+        <!-- <form [formGroup]="secondFormGroup" (ngSubmit)="secondsubmit()"> -->
+        <form>
+            <div class="d-flex">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input class="form-control" name="fname" formControlName="name" type="text" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for=" exampleInputPassword1 ">Contact</label>
+                    <input class="form-control" name="contact" formControlName="contact" type="number" id="exampleInputPassword1 ">
+                </div>
+
+            </div>
+            <div class="d-flex">
+                <div class="d-flex flex-column">
+                    <p class="ml-3">Select Any</p>
+                    <div class="form-group form-check ">
+                        <input type="checkbox" name="applicationType" formControlName="applicationType" class="mr-1" id=" exampleCheck1" value=Android>
+                        <label class="form-check-label " for="exampleCheck1 ">Android Application</label>
+                    </div>
+                    <div class="form-group form-check ">
+                        <input type="checkbox" name="applicationType" formControlName="applicationType" class="mr-1" id=" exampleCheck1" value=IOS>
+                        <label class="form-check-label " for="exampleCheck1 ">IOS Application</label>
+                    </div>
+                    <div class="form-group form-check ">
+                        <input type="checkbox" name="applicationType" formControlName="applicationType" class="mr-1" id=" exampleCheck1" value=Hybrid>
+                        <label class="form-check-label " for="exampleCheck1 ">Hybrid Application</label>
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="ml-3">Your Budget</p>
+                    <div class="form-group form-check ">
+
+                        <input type="checkbox" formControlName="price1" class="mr-1">
+                        <label class="form-check-label " for="exampleCheck1 ">Less than Rs. 50,000</label>
+                    </div>
+                    <div class="form-group form-check ">
+                        <input type="checkbox" formControlName="price1" class="mr-1" id=" exampleCheck1" value="Rs. 50,000 to Rs. 1,00,000">
+                        <label class="form-check-label " for="exampleCheck1 ">Rs. 50,000 to Rs. 1,00,000</label>
+                    </div>
+                    <div class="form-group form-check ">
+                        <input type="checkbox" formControlName="price1" class="mr-1" id=" exampleCheck1" value="Rs. 1,00,000 to 3,00,000">
+                        <label class="form-check-label " for="exampleCheck1 ">Rs. 1,00,000 to 3,00,000</label>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <button type="submit " class="btn btn-primary btn-sm ml-3">Submit</button>
+
+
+
+        </form>
+
+
+    </section>
+
+</ng-template> 
+
+<ng-template #AppDevelopement style="border-radius: 10px;">App Development</ng-template>
+<ng-template #appcontent id="ngsocial" style="z-index: 999999; width: max-content;">{{appdialog}} <br><a type="button" class="btn btn-primary btn-sm m-1" style="font-size: 13px;" (click)="app(ngappcontent)">Contact</a></ng-template>
+
+<div class="menu" id="menu" >
+    <div class="togglemybutton" #toggle>
+        <ion-icon class="add" name="add" style="color: whitesmoke;" ></ion-icon>
+    </div>
+
+    <li style="--i:0;">
+        <h6>Social Media Marketing</h6>
+        <a placement="left" [ngbPopover]="appcontent" [popoverTitle]="AppDevelopement"><ion-icon name="camera" ></ion-icon></a>
+    </li>
+    <li style="--i:1;">
+        <a><ion-icon name="radio"></ion-icon></a>
+    </li>
+    <li style="--i:2;">
+        <h6>Social Media Marketing</h6>
+        <a><ion-icon name="home"></ion-icon></a>
+    </li>
+    <li style="--i:3;">
+        <a><ion-icon name="bag"></ion-icon></a>
+    </li>
+</div>
+

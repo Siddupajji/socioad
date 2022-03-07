@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Quantico:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+.wrapper {
+    margin: 0px;
+    width: 100vw;
+    height: 30vh;
+    background: url();
+    /* background-color: #d6d6d6; */
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%238e8e8e' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E"); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: black; */
+    z-index: -1;
+}
+
+.aboutus {
+    margin-top: 100px;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/photos/group-of-business-people-meeting-discussing-analyzing-graphs-data-picture-id1295309857?b=1&k=20&m=1295309857&s=170667a&w=0&h=kunm63HuraTjURiUBpkfk6mXfQPT6RLcqdBcLVCkCbI=);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.aboutus h1 {
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+    font-family: 'quantico';
+}
+
+#featured-title{
+    position: relative;
+    background: url('http://aamigos.online/wp-content/uploads/2022/01/featured-title-bg-1.png');
+    height: 30vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+   
+  
+    margin-top: 30px;
+}
+.titlegroup{
+    display: table-cell;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 60%;
+}
+.titlegroup h1{
+    position: relative;
+    font-size: 54px;
+    line-height: 1.2;
+    z-index: 1;
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+.vision {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 7%;
+    
+}
+.vision .visioncontent{
+    
+    float: left;
+    width: 40vw;
+    margin-top: 50px;
+}
+
+.vision .visioncontent p{
+    line-height: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.vision .imagecontent{
+    position: relative;
+    background: url('../../assets/vision.png');
+    height: 60vh;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    float: right;
+}
